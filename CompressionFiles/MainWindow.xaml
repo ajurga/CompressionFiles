@@ -1,0 +1,24 @@
+﻿<Window x:Class="CompressionFiles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CompressionFiles"
+        mc:Ignorable="d"
+        Title="Pliki" Height="200" Width="260"
+        Icon="gz.ico">
+    <StackPanel>
+        
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" FontSize="12" FontWeight="Bold">Kompresja i wypakowywanie plików</Label>
+            <WrapPanel>
+                <Button Name="ToCompressFile" Margin="10" Width="100" Click="ToCompressFile_Click">
+                <Image Source="compression.png" />
+            </Button>
+        
+        
+            <Button Name="ToDecompressFile" Margin="10" Width="100" Click="ToDecompressFile_Click">
+                <Image Source="decompression.png" />
+            </Button>
+        </WrapPanel>
+    </StackPanel>
+</Window>
